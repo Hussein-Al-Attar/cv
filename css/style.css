@@ -109,3 +109,10 @@
   background-color: #de463b;
   color: #ffffff;
 }
+
+.wrapper .Phone:hover,
+.wrapper .Phone:hover .tooltip,
+.wrapper .Phone:hover .tooltip::before {
+  background-color:#2e8555;
+  color: #ffffff;
+}
