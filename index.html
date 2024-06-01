@@ -24,7 +24,7 @@
       rel="stylesheet"
       href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
     />
-     <!-- start jsdelivr tailwind.min  -->
+    <!-- start jsdelivr tailwind.min  -->
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
@@ -48,7 +48,20 @@
           x-ref="loading"
           class="fixed inset-0 z-50 flex items-center justify-center text-2xl font-semibold text-white bg-indigo-800"
         >
-          Loading.....
+          <!-- Closed Ring Spinner s8 -->
+          <div class="flex">
+            <div class="relative">
+              <!-- Outer Ring-->
+              <div
+                class="w-12 h-12 rounded-full absolute border-8 border-dashed border-gray-200"
+              ></div>
+
+              <!-- Inner Ring -->
+              <div
+                class="w-12 h-12 rounded-full animate-spin absolute border-8 border-dashed border-purple-500 border-t-transparent"
+              ></div>
+            </div>
+          </div>
         </div>
 
         <!-- Sidebar -->
@@ -769,7 +782,7 @@
           <h1
             class="mb-12 text-center text-2xl text-gray-900 font-bold md:text-4xl dark:text-light"
           >
-          Certifications and Training 
+            Certifications and Training
           </h1>
           <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <figure class="max-w-lg m-2">
