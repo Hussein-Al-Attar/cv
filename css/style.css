@@ -1,118 +1,57 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --light: #edf2f9;
+  --dark: #152e4d;
+  --darker: #12263f;
 }
 
-*:focus,
-*:active {
-  outline: none !important;
-  -webkit-tap-highlight-color: transparent;
+.dark .dark\:text-light {
+  color: var(--light);
 }
 
-.wrapper{
-    /* background: #ddd; */
-    padding: 10px 50px;
-    text-align: center;
+.dark .dark\:bg-dark {
+  background-color: var(--dark);
 }
 
-.wrapper .icon{
-  position: relative;
-  background-color: #ffffff;
-  border-radius: 50%;
-  margin: 10px;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  font-size: 22px;
-  display: inline-block;
-  align-items: center;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  color: #333;
-  text-decoration: none;
+.dark .dark\:bg-darker {
+  background-color: var(--darker);
 }
 
-.wrapper .tooltip {
-  position: absolute;
-  top: 0;
-  line-height: 1.5;
-  font-size: 14px;
-  background-color: #ffffff;
-  color: #ffffff;
-  padding: 5px 8px;
-  border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+.dark .dark\:text-gray-300 {
+  color: #d1d5db;
 }
 
-.wrapper .tooltip::before {
-  position: absolute;
-  content: "";
-  height: 8px;
-  width: 8px;
-  background-color: #ffffff;
-  bottom: -3px;
-  left: 50%;
-  transform: translate(-50%) rotate(45deg);
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+.dark .dark\:text-indigo-500 {
+  color: #6366f1;
 }
 
-.wrapper .icon:hover .tooltip {
-  top: -45px;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+.dark .dark\:text-indigo-100 {
+  color: #e0e7ff;
 }
 
-.wrapper .icon:hover span,
-.wrapper .icon:hover .tooltip {
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+.dark .dark\:hover\:text-light:hover {
+  color: var(--light);
 }
 
-.wrapper .facebook:hover,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip::before {
-  background-color: #3b5999;
-  color: #ffffff;
+.dark .dark\:border-indigo-800 {
+  border-color: #3730a3;
 }
 
-.wrapper .twitter:hover,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip::before {
-  background-color: #46c1f6;
-  color: #ffffff;
+.dark .dark\:border-indigo-700 {
+  border-color: #4338ca;
 }
 
-.wrapper .instagram:hover,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip::before {
-  background-color: #e1306c;
-  color: #ffffff;
+.dark .dark\:bg-indigo-600 {
+  background-color: #4f46e5;
 }
 
-.wrapper .github:hover,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip::before {
-  background-color: #333333;
-  color: #ffffff;
+.dark .dark\:hover\:bg-indigo-600:hover {
+  background-color: #4f46e5;
 }
 
-.wrapper .youtube:hover,
-.wrapper .youtube:hover .tooltip,
-.wrapper .youtube:hover .tooltip::before {
-  background-color: #de463b;
-  color: #ffffff;
+.dark .dark\:border-indigo-500 {
+  border-color: #6366f1;
 }
 
-.wrapper .Phone:hover,
-.wrapper .Phone:hover .tooltip,
-.wrapper .Phone:hover .tooltip::before {
-  background-color:#2e8555;
-  color: #ffffff;
+.hover\:overflow-y-auto:hover {
+  overflow-y: auto;
 }
